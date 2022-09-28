@@ -1,0 +1,68 @@
+.header {
+  width: 99.8%;
+  height: 58px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.headerContainer {
+  width: 75%;
+  height: 97%;
+  border: 1px solid black;
+  border: none;
+  margin: auto;
+  position: relative;
+}
+
+.logoName {
+  position: absolute;
+  top: -22.4%;
+  left: -1.2%;
+  width: 13.7%;
+}
+
+.arrowDown {
+  position: absolute;
+  top: 33%;
+  left: 12%;
+}
+
+.logoName,
+.arrowDown:hover {
+  cursor: pointer;
+}
+
+.headerSearch {
+  position: absolute;
+  top: 23.4%;
+  left: 35.5%;
+  width: 270px;
+  height: 34px;
+  border: none;
+  background-color: #efefef;
+  border-radius: 0.6rem;
+  text-indent: 40px;
+}
+
+.headerSearch:focus {
+  outline: none;
+}
+
+.headerSearch::placeholder {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  position: absolute;
+  top: 30%;
+  /* left: 16%; */
+}
+
+.headerNavbar {
+  position: absolute;
+}
+
+.headerSearchIcon {
+  position: absolute;
+  left: 36.9%;
+  top: 34%;
+}

@@ -1,0 +1,132 @@
+.postUserContainer {
+  width: 99.8%;
+  height: auto;
+  border-radius: 0.3rem;
+  border: 0.5px solid #efefef;
+}
+
+.postContainerWithoutComments {
+  width: 36%;
+  height: auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.3rem;
+  margin-top: 2.5%;
+  margin-left: 17.5%;
+}
+
+.usernameAvatar {
+  display: flex;
+  margin-left: 3%;
+}
+
+.avatar,
+.usernameUser {
+  margin-top: 2.5%;
+}
+
+.usernameUser {
+  margin-left: 3%;
+  font-weight: 600;
+}
+
+.usernameDots {
+  padding-left: 65%;
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+.postPicture > img {
+  width: 100%;
+  height: 320px;
+}
+
+.iconContainer {
+  margin-top: -1.5%;
+}
+
+.iconUl {
+  list-style: none;
+  display: flex;
+  gap: 3%;
+  margin-left: -5%;
+}
+
+.iconUl > li {
+  font-size: 25px;
+}
+
+.bookmarkIcon {
+  list-style: none;
+  padding-left: 62%;
+}
+
+.bookmarkIcon > li {
+  font-size: 20px;
+}
+
+.bookmarkIcon > li:hover {
+  cursor: pointer;
+}
+.likesContainer {
+  font-weight: bolder;
+  padding-left: 3.5%;
+  padding-top: -1%;
+}
+
+.postComments {
+  margin-top: -5.5%;
+  font-size: 14px;
+  height: auto;
+}
+
+.addComment {
+  display: flex;
+  width: 100%;
+}
+
+.addComment > input {
+  height: 20px;
+  margin-left: 7%;
+  margin-top: 3%;
+  border: none;
+  width: 80%;
+}
+
+.addComment > input:focus {
+  outline: none;
+}
+
+.postComment {
+  float: right;
+  color: #0095f6;
+  font-weight: bold;
+  margin-left: 45%;
+  margin-top: 0%;
+  border: none;
+  background-color: #ffffff;
+}
+
+.postComment:hover {
+  cursor: pointer;
+}
+
+.showHideComment {
+  margin-left: 3.5%;
+  color: #8e8e8e;
+}
+
+.showHideComment:hover {
+  cursor: pointer;
+}
+
+.row {
+  border-top: 1px solid #efefef;
+  width: 100%;
+  height: 1px;
+}
+
+.emoji {
+  margin-left: 3%;
+  margin-top: 2%;
+  font-size: 24px;
+}

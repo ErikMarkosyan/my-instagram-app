@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+.profile {
+  width: 73%;
+  height: 310px;
+  margin: auto;
+  display: flex;
+}
+
+.posts {
+  margin-top: 3% !important;
+  width: 73%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.row {
+  border-top: 1px solid #efefef;
+  width: 67.33% !important;
+  height: 1px;
+  margin-left: 16.3% !important;
+}
+
+.postsRow {
+  margin-left: 35%;
+  display: flex;
+  gap: 5px;
+}
+
+.savedRow {
+  display: flex;
+  margin-left: 46%;
+  color: #8e8e8e;
+  margin-top: -4.5%;
+}
+
+.taggedRow {
+  display: flex;
+  margin-left: 57%;
+  color: #8e8e8e;
+  margin-top: -4.5%;
+}
+
+.rowIcon {
+  font-size: 15px;
+  margin-top: 0.8%;
+}
+
+.postsPosts {
+  margin-top: 0.5%;
+}
+
+.postsPostsS {
+  margin-left: 1%;
+  margin-top: 0%;
+}
+
+.postsPostsT {
+  margin-top: 0%;
+}

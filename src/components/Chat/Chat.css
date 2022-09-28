@@ -1,0 +1,106 @@
+.chatContainer {
+  margin: auto;
+  width: 75%;
+  min-height: 400px;
+  background-color: #fafafa;
+}
+
+.inpButton {
+  width: 85%;
+  border: 1px solid #dbdbdb;
+  margin: auto;
+  border-radius: 20px;
+  height: 45px;
+}
+
+.inpButton > form > input {
+  margin-left: 2%;
+  margin-top: 1.2%;
+  width: 83%;
+  height: 27px;
+  border: none;
+}
+
+.inpButton > form > input:focus {
+  outline: none;
+}
+
+.inpButton > form {
+  display: flex;
+}
+
+.inpButton > form > p {
+  margin-top: 0.4%;
+  margin-left: 2.5%;
+  font-size: 33px;
+}
+
+.sendMessage {
+  color: #0095f6;
+  border: none;
+  background-color: white;
+  height: 10px;
+  margin-top: 1.7%;
+}
+
+.sendMessage:hover {
+  cursor: pointer;
+}
+
+.chat {
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  padding: 1%;
+  padding-bottom: 10%;
+}
+
+.userInfo {
+  display: flex;
+}
+
+.userInfo > img {
+  width: 8%;
+}
+
+.me {
+  margin-left: 90%;
+  text-align: center;
+  align-items: center;
+}
+
+.you {
+  float: left;
+}
+
+.chatMessage {
+  background-color: #efefef;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  word-break: break-all;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+}
+
+.deleteAllMessages {
+  margin-left: 72%;
+  height: 35px;
+  background: #ffffff;
+  color: #ff4c4c;
+  border: 1px solid #ff4c4c;
+  margin-top: 2%;
+  border-radius: 0.3rem;
+  word-break: break-all;
+  width: 142px;
+}
+
+.deleteAllMessages:hover {
+  cursor: pointer;
+}

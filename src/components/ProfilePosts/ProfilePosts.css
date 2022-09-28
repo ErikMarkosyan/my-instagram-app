@@ -1,0 +1,25 @@
+.post {
+  width: 28%;
+  position: relative;
+}
+
+.post > img {
+  width: 100%;
+  height: auto;
+}
+.del {
+  position: absolute;
+  top: 3px;
+  left: 220px;
+  display: none;
+}
+
+.post:hover span {
+  display: block;
+  font-size: 25px;
+}
+
+.del:hover {
+  cursor: pointer;
+  color: red;
+}

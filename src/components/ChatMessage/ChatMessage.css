@@ -1,0 +1,35 @@
+.message {
+  display: flex;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  word-break: break-all;
+  align-items: center;
+  border-radius: 1rem;
+  margin-top: 2%;
+  padding: 1%;
+}
+
+.messagesContainer {
+  width: 100%;
+  display: block;
+}
+
+.me {
+  margin-left: 75%;
+  background-color: #efefef;
+}
+
+.you {
+  width: 25%;
+  border: 1px solid #efefef;
+}
+
+.mess {
+  width: 100%;
+  height: 90px;
+}
+
+.delteMessage:hover {
+  cursor: pointer;
+}

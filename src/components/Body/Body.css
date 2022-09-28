@@ -1,0 +1,45 @@
+.bodyContainer {
+  background-color: #fafafa;
+}
+
+.storiesContainer {
+  width: 36%;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  height: 95px;
+  margin-top: 2%;
+  margin-left: 17.5%;
+  display: flex;
+  gap: 2%;
+}
+
+.storiesContainer > div > img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-top: 1.5%;
+  margin-left: 4%;
+  border: 2px solid #d50fc8;
+}
+
+.storiesContainer > div > p {
+  margin-top: -4px;
+}
+
+.postsContainer {
+  width: 36%;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.3rem;
+  height: auto;
+  margin-top: 2.5%;
+  margin-left: 17.5%;
+}
+
+.iconUl > li:hover {
+  cursor: pointer;
+}
+
+.storiesContainer > div {
+  padding-left: 1.7%;
+}

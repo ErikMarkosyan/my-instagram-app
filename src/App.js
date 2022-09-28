@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Profile from "./components/Profile/Profile";
+import Body from "./components/Body/Body";
+import Wrapper from "./pages/Wrapper";
+import Login from "./components/Login/Login";
+import Chat from "./components/Chat/Chat";
+import AddNewPost from "./components/AddNewPost/AddNewPost";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/main" element={<Wrapper />}>
+          <Route index element={<Body />} />
+          <Route path="chat" element={<Chat />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="newPost" element={<AddNewPost />} />
+        </Route>
+        <Route path="/" element={<Login />} />
+        <Route path="*" element={<h1>Error 404</h1>} />
+      </Routes>
     </div>
   );
 }

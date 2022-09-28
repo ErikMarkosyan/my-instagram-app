@@ -1,0 +1,27 @@
+.navbarDiv {
+  position: absolute;
+  left: 67%;
+  top: -4%;
+}
+
+.navbarUl {
+  list-style: none;
+  display: flex;
+  gap: 13%;
+}
+
+.navbarUl > li {
+  font-size: 26px;
+}
+
+.navbarUl > li > a {
+  color: black;
+}
+
+.navbarUl > li :hover {
+  cursor: pointer;
+}
+
+.userLogo {
+  width: 30px;
+}
