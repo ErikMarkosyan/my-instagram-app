@@ -72,7 +72,10 @@ const Post = ({
         &nbsp; &nbsp;
         <p>{description}</p>
       </div>
-      <div className="postComments" style={{display: comments.length ? "block" : "none"}}>
+      <div
+        className="postComments"
+        style={{ display: comments.length ? "block" : "none" }}
+      >
         <p onClick={toggleShow} className="showHideComment">
           {show ? "Hide comments" : `View all ${comments.length} comments`}
         </p>

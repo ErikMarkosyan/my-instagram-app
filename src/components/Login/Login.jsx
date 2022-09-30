@@ -1,7 +1,7 @@
 import "./Login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   fetchUsers,
@@ -9,14 +9,14 @@ import {
   setInitialUser,
 } from "../../store/slices/usersSlice/usersSlice";
 import { useNavigate } from "react-router-dom";
+import showHide from "../../hoc/showHide";
 
-const Login = () => {
+const Login = ({ toggleShow, show }) => {
   const fbIcon = <FontAwesomeIcon icon={faFacebookSquare} />;
   const dispatch = useDispatch();
   const users = useSelector(selectUsers);
   const navigate = useNavigate();
   const formRef = useRef(null);
-  const [isRevealPwd, setIsRevealPwd] = useState(false);
   useEffect(() => {
     if (!users.data.length) {
       dispatch(fetchUsers());
@@ -81,13 +81,10 @@ const Login = () => {
                   onFocus={(e) => (e.target.placeholder = "")}
                   onBlur={(e) => (e.target.placeholder = "Password")}
                   defaultValue={"gwenborough"}
-                  type={isRevealPwd ? "text" : "password"}
+                  type={show ? "text" : "password"}
                 />
-                <p
-                  className="showHidePassword"
-                  onClick={() => setIsRevealPwd((prevState) => !prevState)}
-                >
-                  {!isRevealPwd ? "Show" : "Hide"}
+                <p className="showHidePassword" onClick={toggleShow}>
+                  {!show ? "Show" : "Hide"}
                 </p>
                 <button className="loginButton">Log in</button>
               </form>
@@ -124,4 +121,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default showHide(Login);
